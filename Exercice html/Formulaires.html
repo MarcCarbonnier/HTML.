@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+
+<body>
+    <form action="destinations.php" method="post">
+        <label for="Nom">Nom :</label><input type="text" name="Nom" id="Nom">
+        <label for="Prenom">Prénom :</label><input type="text" name="Prenom" id="Prenom">
+        <input type="submit" value="envoyer">
+        <textarea name="commentaire" rows="10"
+            cols="50"> Test d'un texte plutt mng je sais pa squoi crire de plus cest aussi un commentaire au cas ou</textarea>
+        <input type="checkbox" name="voir le commentaire" value="Oui"> Oui
+        <input type="checkbox" name="voir le commentaire" value="non"> Non
+    </form>
+    <form action="destination.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Coordonnées</legend>
+            <label for="nom">Nom:</label><input type="text" name="nom" id="?"><br>
+            <label for="?">Email:</label><input type="email" name="email"><br>
+            <label for="date">Date de naissance:</label><input type="date" name="ddn" id="date">
+        </fieldset>
+        <input type="file" name="Fichier">
+    </form>
+</body>
+
+</html>

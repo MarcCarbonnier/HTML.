@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo Formulaire</title>
+</head>
+
+<body>
+    <form action="destination.php" method="get" enctype="multipart/form-data">
+    <fieldset>
+        <legend>Vos Coordonnées</legend>
+        <label for="Nom">Nom:</label><input type="text" name="nom" id="?" required><br>
+        <label for="Prénom">Prénom:</label><input type="text" name="Prénom" required><br>
+        <label for="Sexe">Sexe:</label><input type="radio" name="Sexe" value="Homme" required> Homme <input type="radio"
+            name="Sexe" value="Femme" required> Femme<br>
+        <label for="date">date de naissance:</label><input type="date" name="ddn" id="date" required><br>
+        <label for="Code postal">Adresse Postal:</label><input type="text" name="zipcode" required><br>
+        <label for="Adresse">Adresse</label><input type="text" name="adresse"><br>
+        <label for="City">Ville</label><input type="text" name="City"><br>
+        <label for="mail">Email</label><input type="text" name="mail" required>
+    </fieldset>
+    </form>
+    <fieldset>
+        <legend>Votre Demande</legend>
+        <Required>
+            <label for="Sujet">Sujet</label>
+            <select id="Sujet">
+                <option value="Veillez séléctionner un sujet">Veuillez séléctionner un sujet</option>
+                <option value="Mes commandes">Mes commandes</option>
+                <option value="Question sur un produit">Question sur un produit</option>
+                <option value="Réclamation">Réclamation</option>
+                <option value="Autres">Autres</option>
+            </select><br>
+        </Required>
+        <label for="Votreqestion">Votre question</label><textarea name="Votre Question" rows="5" cols="35"></textarea>
+    </fieldset>
+    <input type="checkbox" required><label for="J'accepte le traitement informatique de ce formulaire">J'accepte le traitement informatique de ce formulaire</label><br>
+    <input type="submit" value="envoyer"> <input type="submit" value="Annuer">
+</body>
+
+</html>

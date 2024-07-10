@@ -1,0 +1,16 @@
+nav{
+    background-color: black;
+    padding: 7pt 50pt;
+}
+a{
+    color: white;
+}
+.section{
+    display: flex;
+}
+#one{
+    background-color: #8c8c8c;
+}
+.flex-1{
+    flex: 1;
+}
