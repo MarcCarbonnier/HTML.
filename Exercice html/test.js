@@ -115,7 +115,7 @@ for (var i in tableau)
 Créer une page HTML qui demande à l'utilisateur un prénom.
 La page doit continuer à demander des prénoms à l'utilisateur jusqu'à ce qu'il laisse le champ vide.
 Enfin, la page affiche sur la console le nombre de prénoms et les prénoms saisis.
-*/
+
 
 var i=0
 
@@ -132,4 +132,4 @@ do
 } while (i <= 10) ;
 
 // instructions exécutées après le for (i vaut 10)
-console.log("fin de la boucle");
+console.log("fin de la boucle");*/

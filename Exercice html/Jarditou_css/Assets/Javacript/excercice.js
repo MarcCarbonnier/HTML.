@@ -16,13 +16,14 @@ let i;
 let cont = true;
 while (cont == true) {
     i = prompt("Saisir un prénom");
-    if (i === "") {
+    if (i == "") {
         cont = false;
     }
     else {
         console.log(i);
     }
 console.log(cont);
+
 
 }
 
