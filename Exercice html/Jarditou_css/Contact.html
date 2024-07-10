@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Jarditou</title>
+    <link rel="stylesheet" href="./Assets/CSS/Contat.css">
+</head>
+
+<body>
+    <header><img src="SRC/img/jarditou_logo.jpg" alt="Logo Jarditou" title="Logo Jarditou" width="200" height="100">
+    </header>
+    <nav>
+        <a href="Page_Accueil.html" title="Page Accueil">Accueil</a>
+        <a href="tableau.html" title="Tableaux">Tableaux</a>
+        <a href="Contact.html" title="Contact">Contact</a>
+    </nav>
+    <img src="SRC/img/promotion.jpg" alt="Promo Jarditou" title="Promo Jarditou">
+    <h2>Contact</h2>
+    <hr>
+    <form action="destination.php" method="get" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Vos Coordonnées</legend>
+            <label>Nom:</label><input type="text" name="nom" required><br>
+            <label>Prénom:</label><input type="text" name="Prénom" required><br>
+            <label>Sexe:</label><input type="radio" name="Sexe" value="Homme" required> Homme <input type="radio"
+                name="Sexe" value="Femme" required> Femme<br>
+            <label for="date">date de naissance:</label><input type="date" name="ddn" id="date" required><br>
+            <label>Adresse Postal:</label><input type="text" name="zipcode" required><br>
+            <label>Adresse</label><input type="text" name="adresse"><br>
+            <label>Ville</label><input type="text" name="City"><br>
+            <label>Email</label><input type="text" name="mail" required>
+        </fieldset>
+    </form>
+    <fieldset>
+        <legend>Votre Demande</legend>
+        <label for="Sujet">Sujet</label>
+        <select id="Sujet">
+            <option value="Veillez séléctionner un sujet">Veuillez séléctionner un sujet</option>
+            <option value="Mes commandes">Mes commandes</option>
+            <option value="Question sur un produit">Question sur un produit</option>
+            <option value="Réclamation">Réclamation</option>
+            <option value="Autres">Autres</option>
+        </select><br>
+        <label>Votre question</label><textarea name="Votre Question" rows="5" cols="35"></textarea>
+    </fieldset>
+    <input type="checkbox" required><label>J'accepte le traitement informatique de ce formulaire</label><br>
+    <input type="submit" value="envoyer"> <input type="submit" value="Annuer"><br>
+    <footer>
+        <nav>
+            <a href="Page_Accueil.html" title="Page Accueil">Mentions Légales</a>
+            <a href="tableau.html" title="Tableaux">Horaires</a>
+            <a href="Contact.html" title="Contact">Plan du site</a>
+        </nav>
+    </footer>
+</body>
+
+</html>

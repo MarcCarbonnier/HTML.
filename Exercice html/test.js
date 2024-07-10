@@ -20,7 +20,6 @@ let b=100;
 b--;
 let c=1.00;
 let d=b+c;
-Boolean(d);
 alert("Ceci est une chaine de caractère : " + a + " ou " + b);
 
 
@@ -46,18 +45,16 @@ var x=2024 ;
 alert(x-age);
 if (x-age>=18)
 {
-    console.log("Vous êtes majeur");
+alert("Vous êtes majeur");
 } 
 else
 {
- console.log("Vous êtes mineur");
+ alert("Vous êtes mineur");
 }
-*/
 
-//Faire la saisie de 2 nombres entiers, puis la saisie d'un opérateur +, -, * ou /.
-//Si l'utilisateur entre un opérateur erroné, le programme affichera un message d'erreur.
-//Dans le cas contraire, le programme effectuera l'opération demandée (en prévoyant le cas d'erreur division par 0), puis affichera le résultat.
 
+
+//Faire une calculatrice
 var n1 = prompt("Entrer un nombre");
 var operateurs = prompt("Entrez un opérateurs +,-,*,/");
 var n2 = prompt("Entrez un nombre");
@@ -74,7 +71,65 @@ switch (operateurs) {
         break;
     case ("/"):
         alert(n1 / n2);
+        if (n2==0)
+        alert("Impossible d'effectuer cette action")
         break;
     default:
         alert("mauvais opérateur");
 }
+
+
+//Exemple Boucle for
+console.log("Table de multiication par 5")
+console.log("===================")
+for (i = 0; i <= 10; i++) {
+    resultat = 5 * i;
+
+    console.log("5 * " + i + "=" + resultat);
+}
+console.log("fin de boucle");
+
+
+//Exemple boucle while
+var i = 0
+console.log("Table de multiplication par 5");
+console.log("===========================");
+while (i <= 10) {
+    resultat = 5 * i;
+    console.log(" le resultat de 5x"+ i + " est: " + resultat)
+    i++
+}
+console.log("Fin de la boucle")
+
+
+//Exemple for...in
+var tableau = ["Paul", "Pierre", "Anne", "Sophie"];
+
+for (var i in tableau) 
+{
+    console.log(tableau[i]);
+}
+*/
+
+/*
+Créer une page HTML qui demande à l'utilisateur un prénom.
+La page doit continuer à demander des prénoms à l'utilisateur jusqu'à ce qu'il laisse le champ vide.
+Enfin, la page affiche sur la console le nombre de prénoms et les prénoms saisis.
+*/
+
+var i=0
+
+console.log("Table de multiplication par 5");
+console.log("=============================");
+
+do 
+{   
+    resultat = 5 * i;
+
+    console.log("5 * "+i+" = "+resultat);
+
+    i++;
+} while (i <= 10) ;
+
+// instructions exécutées après le for (i vaut 10)
+console.log("fin de la boucle");
