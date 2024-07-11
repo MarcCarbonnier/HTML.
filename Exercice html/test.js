@@ -61,7 +61,7 @@ var n2 = prompt("Entrez un nombre");
 var result = n1, operateurs, n2
 switch (operateurs) {
     case "+":
-        alert(n1 + n2);
+        alert(parseInt(n1) + parseInt(n2));
         break;
     case "-":
         alert(n1 - n2);
@@ -109,15 +109,10 @@ for (var i in tableau)
 {
     console.log(tableau[i]);
 }
+
 */
 
-/*
-Créer une page HTML qui demande à l'utilisateur un prénom.
-La page doit continuer à demander des prénoms à l'utilisateur jusqu'à ce qu'il laisse le champ vide.
-Enfin, la page affiche sur la console le nombre de prénoms et les prénoms saisis.
-
-
-var i=0
+/*var i=0
 
 console.log("Table de multiplication par 5");
 console.log("=============================");
@@ -129,7 +124,21 @@ do
     console.log("5 * "+i+" = "+resultat);
 
     i++;
-} while (i <= 10) ;
+} while (i <= 10) ;*/
 
-// instructions exécutées après le for (i vaut 10)
-console.log("fin de la boucle");*/
+function maFonction() {
+    var plop1 = 123;
+    return plop1;
+}
+
+function maFonction2() {
+    plop2 = 456;
+}
+
+plop1 = maFonction();
+
+console.log("fonction 1 / plop1 : " + plop1);
+
+maFonction2();
+
+console.log("mafonction2 > plop2 : " + plop2);
