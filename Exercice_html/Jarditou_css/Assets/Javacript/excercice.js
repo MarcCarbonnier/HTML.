@@ -58,7 +58,27 @@ console.log("Moyenne: " + moyenne);
 
 
 
-//______________________________________________________________________________________//
+//________________________________Pas fini______________________________________________________//
 
 //Exercice Tableau
+
+let x=prompt("Saisir la taille du tableau");
+let mytableau=[x];
+console.log("taille du tableau est de "+mytableau);
+let i=prompt("Saisir un nom");
+for (let i=0;i<mytableau.length;i++);
+{
+    console.log("Nom dans le tableau "+mytableau[i]);
+}
 */
+//________________________________________________________
+
+function produit(x,y)
+{
+    let resultat= x * y
+    return resultat;
+}
+function afficheImage(img="papillon.jpg")
+{
+    let htlm=document.getElementById("demo").innerHTML;
+}
