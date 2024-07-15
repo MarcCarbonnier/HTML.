@@ -18,9 +18,6 @@ function myfunction(){
 myfunction();
 */
 
-function RandomNum(min, max) {
-    return Math.random() * (100 - 1) + 1;
-  }
-  console.log(Math.random);
+
 
   
