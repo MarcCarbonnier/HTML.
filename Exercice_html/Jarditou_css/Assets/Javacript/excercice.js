@@ -57,28 +57,59 @@ console.log("Nb saisis: " + nbsaisis);
 console.log("Moyenne: " + moyenne);
 
 
-
-//________________________________Pas fini______________________________________________________//
+//______________________________________________________________________________________//
 
 //Exercice Tableau
 
-let x=prompt("Saisir la taille du tableau");
-let mytableau=[x];
-console.log("taille du tableau est de "+mytableau);
-let i=prompt("Saisir un nom");
-for (let i=0;i<mytableau.length;i++);
+
+let nb = prompt("Saisr un nombre");
+console.log("taille du tableau est de " + nb);
+let x=0;
+let Myt=[];
+
+do
 {
-    console.log("Nom dans le tableau "+mytableau[i]);
+
+    a=prompt("Saisir un element");
+    Myt.push(a);
+    x++;
 }
-*/
+while (nb > x) 
+
+console.log(Myt);
+
+console.log(x);
+if (x.length > Myt) {
+    alert("Opération invalide")
+};
 //________________________________________________________
 
-function produit(x,y)
-{
-    let resultat= x * y
-    return resultat;
+
+let somme=0;
+let moyenne=0;
+let nbsaisis=0;
+let saisie=-1;
+let tableau=[]
+
+while (saisie !=0){
+    saisie=parseInt(window.prompt("Saisir un nombre"));
+    tableau.push(saisie);
+
+    if (saisie !=0){
+        somme += saisie;
+        nbsaisis++;
+    }
+
 }
-function afficheImage(img="papillon.jpg")
-{
-    let htlm=document.getElementById("demo").innerHTML;
-}
+
+//Moyenne
+moyenne=somme/nbsaisis;
+console.log(tableau);
+console.log("Somme: " + somme);
+console.log("Nb saisis: " + nbsaisis);
+console.log("Moyenne: " + moyenne);
+
+*/
+
+
+

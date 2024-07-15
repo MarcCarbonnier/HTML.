@@ -1,31 +1,21 @@
 <!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <title>Exercice</title>    
-  </head>
-  <body>
-    <h1>Portée d'une variable dans une fonction | Javascript</h1>
-    <hr>        
-    <script>
-    function maFonction() 
-    {
-     var plop1 = 123;       
-       return plop1;
-    }
+<html>
+<body>
 
-    function maFonction2() 
-    {
-       plop2 = 456;     
-    }
+<h1>JavaScript Functions</h1>
 
-    plop1 = maFonction();
+<p>Call a function which performs a calculation and returns the result:</p>
 
-    console.log("fonction 1 / plop1 : "+plop1);
+<p id="demo"></p>
 
-    maFonction2();
+<script>
+let x = myFunction(4, 3);
+document.getElementById("demo").innerHTML = x;
 
-    console.log("mafonction2 > plop2 : "+plop2);
-    </script> 
-  </body>
+function myFunction(a, b) {
+  return a * b;
+}
+</script>
+
+</body>
 </html>
