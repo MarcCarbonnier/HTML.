@@ -111,5 +111,3 @@ console.log("Moyenne: " + moyenne);
 
 */
 
-
-

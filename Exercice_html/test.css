@@ -1,0 +1,26 @@
+legend{
+    display: flex;
+    justify-content:center ;
+}
+.FlexContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 50%;
+    height: 20%;
+    overflow: auto;
+    flex-direction: row;
+
+}
+textarea{
+    height: 103px;
+}
+
+.FlexContainer div {
+    width: 500px;
+    height: 500px;
+
+}
