@@ -1,26 +1,26 @@
-legend{
-    display: flex;
-    justify-content:center ;
-}
-.FlexContainer {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    width: 50%;
-    height: 20%;
-    overflow: auto;
-    flex-direction: row;
 
-}
-textarea{
-    height: 103px;
-}
 
-.FlexContainer div {
-    width: 500px;
-    height: 500px;
+HTML JS 
 
-}
+Result
+Skip Results Iframe
+
+EDIT ON
+
+let chaine = 'Bonjour, je suis ^Pierre^. Mon /numéro/ est le [06-36-65-65-65]';
+let masque1 = /\w/g; //Correspond à un caractère alphanumérique ou "_"
+let masque2 = /\W/g; //Corrrespond à tout sauf un caractère alphanumérique ou "_"
+let masque3 = /\d/g; //Correspond à un chiffre
+let masque4 = /[\da-z]/g; //Correspond à un chiffre ou à une lettre minuscule
+
+let p0 = document.getElementById('p0');
+let p1 = document.getElementById('p1');
+
+
+p0.textContent = chaine;
+p1.innerHTML =
+'Lettre, chiffre, ou "_" : ' +  chaine.match(masque1) +
+'<br>Tout sauf une lettre, un chiffre ou "_" : ' +  chaine.match(masque2) +
+'<br>Chiffre : ' +  chaine.match(masque3) +
+'<br>Chiffre ou lettre minuscule : ' +  chaine.match(masque4);
+

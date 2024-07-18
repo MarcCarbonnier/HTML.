@@ -112,6 +112,7 @@ for (var i in tableau)
 
 */
 
+//_________________________________________________________________________________//
 /*var i=0
 
 console.log("Table de multiplication par 5");
@@ -124,4 +125,21 @@ do
     console.log("5 * "+i+" = "+resultat);
 
     i++;
-} while (i <= 10) ;*/
+} while (i <= 10) ;
+
+//_________________________________________________________________________________//
+
+function boucle(x) 
+{
+    if (x >= 10) 
+    { 
+        return; 
+    }
+
+    console.log("x : "+x);
+
+    boucle(x + 1); // appel récursif
+}
+
+boucle(0); 
+*/
