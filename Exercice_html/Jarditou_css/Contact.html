@@ -1,53 +1,54 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Jarditou</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="./Assets/CSS/Contat.css">
 </head>
 
 <body>
-    <header><img src="SRC/img/jarditou_logo.jpg" alt="Logo Jarditou" title="Logo Jarditou" width="200" height="100">
+    <header><img src="SRC/img/jarditou_logo.jpg" alt="logo_jarditou" title="logo_jarditou" width="200" height="100">
     </header>
     <nav>
-        <a href="Page_Accueil.html" title="Page Accueil">Accueil</a>
+        <a href="Page_Accueil.html" title="Page_Accueil">Accueil</a>
         <a href="tableau.html" title="Tableaux">Tableaux</a>
-        <a href="Contact.html" title="Contact">Contact</a>
+        <a href="Contact.html" title="Contact">Nous contacter</a>
     </nav>
-    <img src="SRC/img/promotion.jpg" alt="Promo Jarditou" title="Promo Jarditou">
+    <img src="SRC/img/promotion.jpg" alt="promo_jarditou" title="promo_jarditou">
     <h2>Contact</h2>
     <hr>
     <form id="formulaire" action="destination.php" method="post" enctype="multipart/form-data">
         <fieldset>
             <legend>Vos Coordonnées</legend>
-
-            <div id="text">
-                <label for="nom">Nom</label><br>
-                <label for="prenom">Prénom</label><br>
-                <label for="sexe">Sexe</label><br>
-                <label for="date">Date de naissance</label><br>
-                <label for="Postal">Adresse postale</label><br>
-                <label for="adresse">Adresse</label><br>
-                <label for="Ville">Ville</label><br>
-                <label for="email">E-mail</label><br>
-            </div>
-
-            <div id="zone">
-                <input id="nom" type="text" name="nom" required><br>
-                <input id="prenom" type="text" name="Prénom" required><br>
-                <input id="sexe" type="radio" name="Sexe" value="Homme" required> Homme <input type="radio" name="Sexe"
-                    value="Femme" required> Femme<br>
-                <input id="date" type="date" name="ddn" id="date" required><br>
-                <input id="poste" type="text" name="zipcode" required><br>
-                <input type="text" name="adresse"><br>
-                <input type="text" name="City"><br>
-                <input id="Email" type="text" name="mail" required>
-            </div>
+            <section class="flex">
+                <div id="text" class="one">
+                    <label for="nom">Nom</label><br>
+                    <label for="prenom">Prénom</label><br>
+                    <label for="sexe">Sexe</label><br>
+                    <label for="date">Date de naissance</label><br>
+                    <label for="Postal">Adresse postale</label><br>
+                    <label for="adresse">Adresse</label><br>
+                    <label for="Ville">Ville</label><br>
+                    <label for="email">E-mail</label><br>
+                </div>
+                <div id="zone">
+                    <input id="nom" type="text" name="nom" required><br>
+                    <input id="prenom" type="text" name="Prénom" required><br>
+                    <input id="sexe" type="radio" name="Sexe" value="Homme" required> Homme <input type="radio" name="Sexe"
+                        value="Femme" required> Femme<br>
+                    <input id="date" type="date" name="ddn" id="date" required><br>
+                    <input id="poste" type="text" name="zipcode" required><br>
+                    <input type="text" name="adresse"><br>
+                    <input type="text" name="City"><br>
+                    <input id="Email" type="text" name="mail" required>
+                </div>
+            </section>
         </fieldset>
+        <button id="sub" type="submit" name="Envoyer">Envoyer</button>
+        <button id="reset" type="reset" name="reset">Reset</button>
     </form>
-
     <fieldset>
         <legend>Votre Demande</legend>
         <label for="Sujet">Sujet</label>
@@ -60,17 +61,10 @@
         </select><br>
         <label>Votre question</label><textarea name="Votre Question" rows="5" cols="35"></textarea>
     </fieldset>
-    <input type="checkbox" required><label>J'accepte le traitement informatique de ce formulaire</label><br>
+    <input id="valid" type="checkbox" required><label>J'accepte le traitement informatique de ce formulaire</label><br>
     <button id="sub" type="submit" name="envoyer">Envoyer</button>
     <button id="reset" type="reset" name="reset">Annuler</button>
-    <script src="Contact.js"></script>
-    <footer>
-        <nav>
-            <a href="Page_Accueil.html" title="Page Accueil">Mentions Légales</a>
-            <a href="tableau.html" title="Tableaux">Horaires</a>
-            <a href="Contact.html" title="Contact">Plan du site</a>
-        </nav>
-    </footer>
+    <script src="./Assets/Javacript/Contact.js"></script>
 </body>
 
 </html>
