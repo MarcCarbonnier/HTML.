@@ -1,0 +1,25 @@
+body{
+    background-color: grey;
+    width: 100%;
+}
+.entete{
+    background: linear-gradient(#493399 , #120d26);    
+}
+header{
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 25px;
+}
+h1{
+    font-size: 100px;
+}
+.titre{
+    padding-top: 10px;
+    color: green;
+    font-size: 20px;
+}
+body{
+    text-align: center;
+}

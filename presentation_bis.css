@@ -1,0 +1,13 @@
+header{
+    background: linear-gradient(#ff6666, #4d4dff);
+}
+body{
+    background-color: grey;
+}
+.text-sm-center{
+    font-size: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+nav{
+    color: green;
+}

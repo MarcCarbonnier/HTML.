@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Présentation TB</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="presentation_bis.css" />
+  </head>
+  <body>
+    <section class="container1">
+      <header>
+        <p class="text-sm-center">Présentation TB</p>
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-home"
+              type="button"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="true"
+            >
+            
+              Page HTML
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-profile"
+              type="button"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+            >
+            
+              Liste
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-contact-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-contact"
+              type="button"
+              role="tab"
+              aria-controls="pills-contact"
+              aria-selected="false"
+            >
+              Contact
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-disabled-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-disabled"
+              type="button"
+              role="tab"
+              aria-controls="pills-disabled"
+              aria-selected="false"
+              disabled
+            >
+              Disabled
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="pills-home"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+            tabindex="0"
+          >
+           <a href="Presentation_Bis.html" title="Presentation_Bis">Presentation_Bis</a>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-profile"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
+            tabindex="0"
+          >
+           <a href="liste.html" title="liste">liste</a>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-contact"
+            role="tabpanel"
+            aria-labelledby="pills-contact-tab"
+            tabindex="0"
+          >
+            ...
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-disabled"
+            role="tabpanel"
+            aria-labelledby="pills-disabled-tab"
+            tabindex="0"
+          >
+            ...
+          </div>
+        </div>
+      </header>
+      <section class="one">
+        <strong id="Page_html"><u>Création d'une page HTML</u></strong>
+        <div>
+          <ul>
+            <li>Avec un titre</li>
+            <li>Un paragraphe</li>
+            <li>Une image</li>
+          </ul>
+        </div>
+        <div class="exe">
+          <h2>Un titre</h2>
+          <p>Un paragraphe</p>
+          <img src="/imagepresent.jpg" alt="mental" title="mental" />
+          <p>Une image directement liée au dossier html</p>
+        </div>
+      </section>
+      <hr />
+      <section class="one">
+        <strong id="liste"><u>Créer une liste</u></strong>
+        <p>Avec un liste ordonnée ol et desordonnée ul</p>
+        <div class="exe">
+          <ol type="A">
+            <li>Souris</li>
+            <li>Chiens</li>
+            <ol type="A">
+              <li>Bassets</li>
+              <li>Caniches</li>
+            </ol>
+
+            <li>Félins</li>
+            <ol type="1">
+              <li>Lions</li>
+              <li>Tigres</li>
+              <li>Chats</li>
+              <ol type="I">
+                <li type="i">Chats Sauvages</li>
+                <li type="i">Chats Domestiques</li>
+              </ol>
+            </ol>
+            <li>Cheveaux</li>
+          </ol>
+          <ul>
+            <li>Souris</li>
+            <li>Chiens</li>
+            <ul style="list-style: circle">
+              <li>Bassets</li>
+              <li>Caniches</li>
+              <li>Félins</li>
+              <ul style="list-style: circle">
+                <li>Lions</li>
+                <li>Tigres</li>
+                <li>Chats</li>
+                <ul style="list-style: square">
+                  <li>Chats Sauvages</li>
+                  <li>Chats Domestiques</li>
+                </ul>
+              </ul>
+            </ul>
+            <li>Cheveaux</li>
+          </ul>
+        </div>
+      </section>
+      <hr />
+      <section class="one">
+        <strong id="Vidéo"><u>Incrsuter une image ou une vidéo</u></strong
+        ><br />
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/VFCLyye0EuM?si=s7KR49T6c8HQDwOC"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <hr />
+      <section class="one">
+        <strong id="Tableaux"
+          ><u>Construction d'un tableau pour le site Jarditou</u></strong
+        >
+        <table>
+          <caption>
+            Vente Jarditou
+          </caption>
+          <thead>
+            <tr>
+              <th>Photo</th>
+              <th>ID</th>
+              <th>Catégorie</th>
+              <th>Libellé</th>
+              <th>Prix</th>
+              <th>Couleur</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="/img/7.jpg" width="50" height="50" /></td>
+              <td>7</td>
+              <td>Barbecues</td>
+              <td>Aramis</td>
+              <td>110.00€</td>
+              <td>Brun</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td><img src="/img/8.jpg" width="50" height="50" /></td>
+              <td>8</td>
+              <td>Barbecues</td>
+              <td>Athos</td>
+              <td>249.99€</td>
+              <td>Noir</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td><img src="/img/11.jpg" width="50" height="50" /></td>
+              <td>11</td>
+              <td>Barbecues</td>
+              <td>Clatronic</td>
+              <td>135.99€</td>
+              <td>Chrome</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td><img src="/img/12.jpg" width="50" height="50" /></td>
+              <td>12</td>
+              <td>Barbecues</td>
+              <td>Camping</td>
+              <td>88.00€</td>
+              <td>Noir</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td><img src="/img/13.jpg" width="50" height="50" /></td>
+              <td>13</td>
+              <td>Brouette</td>
+              <td>Green</td>
+              <td>49.00€</td>
+              <td>Verte</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <hr />
+      <section class="one">
+        <strong id="Formulaires"
+          ><u>Création d'un formualaire pour le site Jarditou</u></strong
+        >
+        <form
+          action="destination.php"
+          method="get"
+          enctype="multipart/form-data"
+        >
+          <fieldset>
+            <legend>Vos Coordonnées</legend>
+            <label for="Nom">Nom:</label
+            ><input type="text" name="nom" id="?" required /><br />
+            <label for="Prénom">Prénom:</label
+            ><input type="text" name="Prénom" required /><br />
+            <label for="Sexe">Sexe:</label
+            ><input type="radio" name="Sexe" value="Homme" required /> Homme
+            <input type="radio" name="Sexe" value="Femme" required />
+            Femme<br />
+            <label for="date">date de naissance:</label
+            ><input type="date" name="ddn" id="date" required /><br />
+            <label for="Code postal">Adresse Postal:</label
+            ><input type="text" name="zipcode" required /><br />
+            <label for="Adresse">Adresse</label
+            ><input type="text" name="adresse" /><br />
+            <label for="City">Ville</label
+            ><input type="text" name="City" /><br />
+            <label for="mail">Email</label
+            ><input type="text" name="mail" required />
+          </fieldset>
+        </form>
+        <fieldset>
+          <legend>Votre Demande</legend>
+          <Required>
+            <label for="Sujet">Sujet</label>
+            <select id="Sujet">
+              <option value="Veillez séléctionner un sujet">
+                Veuillez séléctionner un sujet
+              </option>
+              <option value="Mes commandes">Mes commandes</option>
+              <option value="Question sur un produit">
+                Question sur un produit
+              </option>
+              <option value="Réclamation">Réclamation</option>
+              <option value="Autres">Autres</option></select
+            ><br />
+          </Required>
+          <label for="Votreqestion">Votre question</label
+          ><textarea name="Votre Question" rows="5" cols="35"></textarea>
+        </fieldset>
+        <input type="checkbox" required /><label
+          for="J'accepte le traitement informatique de ce formulaire"
+          >J'accepte le traitement informatique de ce formulaire</label
+        ><br />
+        <input type="submit" value="envoyer" />
+        <input type="reset" value="Annuler" />
+      </section>
+      <footer>
+        <strong>Voici pour la partie HTML simple</strong>
+      </footer>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
