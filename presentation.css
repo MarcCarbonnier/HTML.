@@ -1,6 +1,5 @@
 body{
     background-color: grey;
-    width: 100%;
 }
 .entete{
     background: linear-gradient(#493399 , #120d26);    
@@ -36,3 +35,10 @@ ul{
     padding-top: 20px;
     padding-bottom: 50px;
 }
+p{
+    transition: 50ms;
+    animation-duration: 3s;
+    animation-name: slideDown;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
